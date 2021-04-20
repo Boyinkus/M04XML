@@ -6,3 +6,8 @@ El proyecto final de la asignatura XML.
 ## Desarollo
 * Item 1
 * Item 2
+
+## Autors
+- Jordi
+
+- Andrade
