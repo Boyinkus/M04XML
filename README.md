@@ -12,10 +12,10 @@ El proyecto final de la asignatura XML.
 
 - Andrade
 
-- DE locos
-
-
+- 
 
 - comeme la pijaA
+
+- NAAAAH DE LOKOOOS
 
 
