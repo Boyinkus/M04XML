@@ -14,7 +14,7 @@ El proyecto final de la asignatura XML.
 
 - 
 
-- comeme la pijaA
+
 
 - NAAAAH DE LOKOOOS
 
