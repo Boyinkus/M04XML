@@ -3,7 +3,7 @@ public class Main {
         System.out.println("Hola Món");
         int n1 = 1 ;
         int n2 = 2 ;
-        System.out.println("El resultado de la resta es: " resultado(n1,n2));
+        System.out.println("El resultado de la resta es: " + resultado(n1,n2));
 
     }
     public static int resultado (int n1, int n2)  {
