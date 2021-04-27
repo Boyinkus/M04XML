@@ -9,13 +9,10 @@ El proyecto final de la asignatura XML.
 
 ## Autors
 - Jordi
+- Fidel
 
-- Andrade
+## Pasos Proyecto
 
-- 
-
-
-
-- NAAAAH DE LOKOOOS
+- Control de l'estoc 
 
 
