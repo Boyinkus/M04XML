@@ -16,6 +16,6 @@ El proyecto final de la asignatura XML.
 
 
 
-- comeme la pija
+- comeme la pijaA
 
 
