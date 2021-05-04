@@ -1,0 +1,4 @@
+1 Manzanas 1.99
+2 leche 2
+3 Chuches 1
+-1
