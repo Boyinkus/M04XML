@@ -75,7 +75,7 @@ public class Main {
 
     public static void opcion1añadirproducto() {
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Has elegido la opcion Consulta ");
+        System.out.println("Has elegido la opcion añadir producto! ");
         System.out.println("Añade el nombre del producto");
         String producto = entrada.nextLine();
         System.out.println("Dime el codigo del producto");
