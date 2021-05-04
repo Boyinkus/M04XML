@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.Arrays;
+
 /*
 Este archivo hara el stock y vendes.
 @author Fidel
@@ -41,6 +43,7 @@ public class Main {
                 break;
             case 2:
                 ticket.ventaprincipal();
+                break;
             case 3:
                 break;
 
@@ -48,7 +51,7 @@ public class Main {
     }
 
 
-    public static void opcion1stock () {
+    public static void opcion1stock() {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Has elegido la opcion Stock ");
         System.out.println("Eliges alguna de las opciones!");
@@ -65,8 +68,10 @@ public class Main {
                 break;
             case 2:
                 opcion2consultarstock();
+                break;
             case 3:
                 opcionesprincipales();
+                break;
 
         }
     }
@@ -75,16 +80,30 @@ public class Main {
     public static void opcion1añadirproducto() {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Has elegido la opcion añadir producto! ");
-        System.out.println("Añade el nombre del producto");
-        String producto = entrada.nextLine();
-        System.out.println("Dime el codigo del producto");
-        int codigo = entrada.nextInt();
-        System.out.println("Dime el precio del prodcuto");
-        double precio = entrada.nextDouble();
+        System.out.println("Cuantos productos deseas añadir? ");
+        int cantidad = entrada.nextInt();
+        String[] vectornombre = new String[cantidad];
+        int[] vectorcodigo = new int[cantidad];
+        double[] vectorprecio = new double[cantidad];
 
-        System.out.println("El producto guardado queda asi! :");
-        System.out.println("Producto: " + producto + " Codigo: " + codigo + " Precio: " + precio);
-        System.out.println("**********");
+
+        for (int n = 0; n < cantidad; n++) {
+
+            System.out.println("Añade el nombre del producto");
+            String producto = entrada.next();
+            vectornombre[n] = producto;
+            System.out.println("Dime el codigo del producto");
+            int codigo = entrada.nextInt();
+            vectorcodigo[n] = codigo;
+            System.out.println("Dime el precio del prodcuto");
+            double precio = entrada.nextDouble();
+            vectorprecio[n] = precio;
+
+            System.out.println("El producto guardado queda asi! :");
+            System.out.println("Producto: " + producto + " Codigo: " + codigo + " Precio: " + precio);
+            System.out.println("**********");
+
+        }
 
         System.out.println("Que deseas hacer? ");
         System.out.println("Opcion 1: Volver a Stock!");
@@ -93,13 +112,15 @@ public class Main {
         int opcion = entrada.nextInt();
 
         switch (opcion) {
-            case 1: opcion1stock();
-            break;
-            case 2: opcionesprincipales();
+            case 1:
+                opcion1stock();
+                break;
+            case 2:
+                opcionesprincipales();
         }
     }
 
-    public static void opcion2consultarstock () {
+    public static void opcion2consultarstock() {
 
     }
 }
