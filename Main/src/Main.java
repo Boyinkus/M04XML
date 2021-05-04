@@ -17,14 +17,15 @@ public class Main {
 
         switch (n1) {
             case 1:
-                opcionesprincipales(n1);
+                //opcionesprincipales(n1);
+                opcionesprincipales();
                 break;
         }
 
 
     }
 
-    public static void opcionesprincipales(int n1) {
+    public static void opcionesprincipales() {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Bienvenido al programa de Fidel Y Jordi ");
         System.out.println("Eliges alguna de las opciones!");
@@ -37,7 +38,7 @@ public class Main {
 
         switch (v1) {
             case 1:
-                opcion1stock(n1);
+                opcion1stock();
                 break;
             //case 2:
               //  opcion2Vender(n1) ;
@@ -48,7 +49,7 @@ public class Main {
     }
 
 
-    public static void opcion1stock (int n1) {
+    public static void opcion1stock () {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Has elegido la opcion Stock ");
         System.out.println("Eliges alguna de las opciones!");
@@ -61,18 +62,18 @@ public class Main {
 
         switch (v1) {
             case 1:
-                opcion1añadirproducto(n1);
+                opcion1añadirproducto();
                 break;
             case 2:
-                opcion2consultarstock(n1);
+                opcion2consultarstock();
             case 3:
-                opcionesprincipales(n1);
+                opcionesprincipales();
 
         }
     }
 
 
-    public static void opcion1añadirproducto(int n1) {
+    public static void opcion1añadirproducto() {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Has elegido la opcion Consulta ");
         System.out.println("Añade el nombre del producto");
@@ -93,14 +94,13 @@ public class Main {
         int opcion = entrada.nextInt();
 
         switch (opcion) {
-            case 1: opcion1stock(n1);
+            case 1: opcion1stock();
             break;
-            case 2: opcionesprincipales(n1);
+            case 2: opcionesprincipales();
         }
     }
 
-    public static void opcion2consultarstock (int n1) {
+    public static void opcion2consultarstock () {
 
     }
-
 }

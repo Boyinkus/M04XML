@@ -6,5 +6,7 @@ Este Archivo contendrá el ticket
  */
 
 public class ticket {
+public static void Ventas () {
 
+}
 }
