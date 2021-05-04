@@ -66,9 +66,9 @@ public class Main {
             case 1:
                 opcion1añadirproducto();
                 break;
-            case 2:
-                opcion2consultarstock();
-                break;
+            //case 2:
+              //  opcion2consultarstock(vectornombre, vectorcodigo, vectorprecio);
+                //break;
             case 3:
                 opcionesprincipales();
                 break;
@@ -108,6 +108,7 @@ public class Main {
         System.out.println("Que deseas hacer? ");
         System.out.println("Opcion 1: Volver a Stock!");
         System.out.println("Opcion 2: Volver a Opciones Principales!");
+        System.out.println("Opcion 3: Consultar el Stock");
         System.out.println("Dime la Opcion: ");
         int opcion = entrada.nextInt();
 
@@ -117,10 +118,35 @@ public class Main {
                 break;
             case 2:
                 opcionesprincipales();
+                break;
+            case 3:
+                opcion2consultarstock(vectornombre, vectorcodigo, vectorprecio);
+                break;
         }
     }
 
-    public static void opcion2consultarstock() {
+    public static void opcion2consultarstock(String [] vectornombre, int [ ] vectorcodigo, double [ ] vectorprecio) {
+        Scanner entrada = new Scanner(System.in);
+
+        String [ ] mostrarnombre = vectornombre ;
+        int [ ] mostrarcodigo = vectorcodigo ;
+        double [ ] mostrarprecio = vectorprecio ;
+
+        for (int n =0 ; n<mostrarnombre.length ; n++) {
+            System.out.println("Nombre del producto: " + mostrarnombre[n]);
+            System.out.println("Codigo del producto: " + mostrarcodigo[n]);
+            System.out.println("Precio del producto: " + mostrarprecio[n] + "€");
+            System.out.println(" ");
+        }
+
+        System.out.println("Que opcion quieres hacer? ");
+        System.out.println("Opcion 1: Volver a Menu Principal");
+        int i = entrada.nextInt() ;
+
+        switch (i) {
+            case 1: opcionesprincipales();
+            break;
+        }
 
     }
 }
