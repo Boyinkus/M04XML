@@ -1,4 +1,8 @@
 import java.util.Scanner;
+/*
+Este archivo hara el stock y vendes.
+@author Fidel
+*/
 
 public class Main {
     public static void main(String[] args) {
