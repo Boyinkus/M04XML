@@ -17,7 +17,6 @@ public class Main {
 
         switch (n1) {
             case 1:
-                //opcionesprincipales(n1);
                 opcionesprincipales();
                 break;
         }
@@ -40,8 +39,8 @@ public class Main {
             case 1:
                 opcion1stock();
                 break;
-            //case 2:
-              //  opcion2Vender(n1) ;
+            case 2:
+                ticket.ventaprincipal();
             case 3:
                 break;
 
@@ -81,7 +80,7 @@ public class Main {
         System.out.println("Dime el codigo del producto");
         int codigo = entrada.nextInt();
         System.out.println("Dime el precio del prodcuto");
-        double precio = entrada.nextInt();
+        double precio = entrada.nextDouble();
 
         System.out.println("El producto guardado queda asi! :");
         System.out.println("Producto: " + producto + " Codigo: " + codigo + " Precio: " + precio);
