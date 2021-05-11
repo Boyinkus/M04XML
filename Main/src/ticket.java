@@ -11,22 +11,20 @@ public class ticket {
 
 
 
-    public static void ventaprincipal(){
-        Scanner sc=new Scanner(System.in);
+    public static void ventaprincipal(Scanner entrada){
         System.out.println("Si quieres volver al apartado principal presiona 1:");
         System.out.println("Si quiere entrar a la  elección ventas presione 2:");
-        int n2=sc.nextInt();
+        int n2=entrada.nextInt();
 
 
         switch (n2) {
-            case 1: Main.opcionesprincipales();
+            case 1: Main.opcionesprincipales(entrada);
                 break;
-            case 2: Ventas();
+            case 2: Ventas(entrada);
         }
 
     }
-public static void Ventas() {
-    Scanner entrada = new Scanner(System.in);
+public static void Ventas(Scanner entrada) {
     System.out.println("Has elegido la opcion  vendes! ");
     System.out.println("Dime la cantidad del producto que deseas añadir: ");
     int cantidad = entrada.nextInt();
@@ -44,9 +42,9 @@ public static void Ventas() {
 
 
         switch (n2) {
-            case 1: Main.opcionesprincipales();
+            case 1: Main.opcionesprincipales(entrada);
                 break;
-            case 2:ventaprincipal();
+            case 2:ventaprincipal(entrada);
         }
     }
 

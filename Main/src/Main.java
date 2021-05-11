@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.io.File;
 import java.util.Arrays;
 
 /*
@@ -20,15 +19,14 @@ public class Main {
 
         switch (n1) {
             case 1:
-                opcionesprincipales();
+                opcionesprincipales(entrada);
                 break;
         }
 
 
     }
 
-    public static void opcionesprincipales() {
-        Scanner entrada = new Scanner(System.in);
+    public static void opcionesprincipales(Scanner entrada) {
         System.out.println("Bienvenido al programa de Fidel Y Jordi ");
         System.out.println("Eliges alguna de las opciones!");
         System.out.println("Opcion 1: Stock");
@@ -40,10 +38,10 @@ public class Main {
 
         switch (v1) {
             case 1:
-                opcion1stock();
+                opcion1stock(entrada);
                 break;
             case 2:
-                ticket.ventaprincipal();
+                ticket.ventaprincipal(entrada);
                 break;
             case 3:
                 break;
@@ -52,8 +50,7 @@ public class Main {
     }
 
 
-    public static void opcion1stock() {
-        Scanner entrada = new Scanner(System.in);
+    public static void opcion1stock(Scanner entrada) {
         System.out.println("Has elegido la opcion Stock ");
         System.out.println("Eliges alguna de las opciones!");
         System.out.println("Opcion 1: Añadir Producto");
@@ -65,21 +62,20 @@ public class Main {
 
         switch (v1) {
             case 1:
-                opcion1añadirproducto();
+                opcion1añadirproducto(entrada);
                 break;
             //case 2:
               //  opcion2consultarstock(vectornombre, vectorcodigo, vectorprecio);
                 //break;
             case 3:
-                opcionesprincipales();
+                opcionesprincipales(entrada);
                 break;
 
         }
     }
 
 
-    public static void opcion1añadirproducto() {
-        Scanner entrada = new Scanner(System.in);
+    public static void opcion1añadirproducto(Scanner entrada) {
         System.out.println("Has elegido la opcion añadir producto! ");
         System.out.println("Cuantos productos deseas añadir? ");
         int cantidad = entrada.nextInt();
@@ -93,9 +89,11 @@ public class Main {
             System.out.println("Añade el nombre del producto");
             String producto = entrada.next();
             vectornombre[n] = producto;
+
             System.out.println("Dime el codigo del producto");
             int codigo = entrada.nextInt();
             vectorcodigo[n] = codigo;
+
             System.out.println("Dime el precio del prodcuto");
             double precio = entrada.nextDouble();
             vectorprecio[n] = precio;
@@ -115,19 +113,19 @@ public class Main {
 
         switch (opcion) {
             case 1:
-                opcion1stock();
+                opcion1stock(entrada);
                 break;
             case 2:
-                opcionesprincipales();
+                opcionesprincipales(entrada);
                 break;
             case 3:
-                opcion2consultarstock(vectornombre, vectorcodigo, vectorprecio);
+                opcion2consultarstock(vectornombre, vectorcodigo, vectorprecio, entrada);
                 break;
         }
     }
 
-    public static void opcion2consultarstock(String [] vectornombre, int [ ] vectorcodigo, double [ ] vectorprecio) {
-        Scanner entrada = new Scanner(System.in);
+    public static void opcion2consultarstock(String [] vectornombre, int [ ] vectorcodigo, double [ ] vectorprecio, Scanner entrada) {
+        //Scanner entrada = new Scanner(System.in);
 
         String [ ] mostrarnombre = vectornombre ;
         int [ ] mostrarcodigo = vectorcodigo ;
@@ -145,7 +143,7 @@ public class Main {
         int i = entrada.nextInt() ;
 
         switch (i) {
-            case 1: opcionesprincipales();
+            case 1: opcionesprincipales(entrada);
             break;
         }
 

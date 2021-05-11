@@ -1,7 +1,22 @@
-5
-Cocacola;1;0,50
-Pepsi;2;0,45
-Fanta;3;0,40
-Sprite;4;0,45
-Agua;5;0,50
+1
+1
+1
+16
+Cocacola 1 0,45
+Pepsi 2 0,50
+Fanta 3 0,45
+MonsterEnergy 4 1
+MonsterEnergyMango 5 1,50
+MonsterEnergyZeroUltra 6 1,50
+MonsterEnergyJuice 7 1,50
+MonsterEnergyUltraBlack 8 1,50
+RedBull 9 1,60
+RedBullZero 10 1,50
+RedbullCoco 11 1,60
+CocaColaZero 12 1,40
+CocaColaZeroZero 13 1,45
+PespsiMax 14 1,30
+FantaLimon 15 1,50
+KongStrong 16 1,35
+3
 -1
