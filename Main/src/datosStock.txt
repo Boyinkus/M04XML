@@ -1,4 +1,7 @@
-1 Manzanas 1.99
-2 leche 2
-3 Chuches 1
+5
+Cocacola;1;0,50
+Pepsi;2;0,45
+Fanta;3;0,40
+Sprite;4;0,45
+Agua;5;0,50
 -1
