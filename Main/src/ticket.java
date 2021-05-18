@@ -17,24 +17,22 @@ public class ticket {
         String nombrefinal = " ";
         int codigofinal = 0;
         double preciofinal = 0;
+        int contador = 0;
+
 
         System.out.println("Has elegido la opcion  Ventas! ");
-        System.out.println(" Dime el nombre del producto ");
-        String product = entrada.next();
+        System.out.println("Dime el total de productos que compraras: ");
+        int cantidad = entrada.nextInt();
 
-        do {
-            for (int n = 0; n < mostrarcodigo.length; n++) {
-                if (mostrarnombre[n].equalsIgnoreCase(product)) {
 
-                    nombrefinal += mostrarnombre[n];
-                    codigofinal += mostrarcodigo[n];
-                    preciofinal += mostrarprecio[n];
+        for (int n = 0; n < cantidad; n++) {
+            System.out.println("Dime los productos! ");
+            String p1 = entrada.next();
 
-                }
-            }
         }
 
-        while (product.equalsIgnoreCase("finalizado"));
+
+        //while (cantidad>=contador);
 
         System.out.println(nombrefinal);
         System.out.println(codigofinal);
