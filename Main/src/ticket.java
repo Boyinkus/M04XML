@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 /*
 Este Archivo contendrá el ticket
@@ -6,46 +7,38 @@ Este Archivo contendrá el ticket
  */
 
 public class ticket {
+    public static void Ventas(Scanner entrada, String[] mostrarnombre, int[] mostrarcodigo, double[] mostrarprecio) {
+        //Guardamos los vectores
 
+        String[] nombre = mostrarnombre;
+        int[] codigo = mostrarcodigo;
+        double[] precio = mostrarprecio;
 
-    public static void ventaprincipal(Scanner entrada) {
-        System.out.println("Si quieres volver al apartado principal presiona 1:");
-        System.out.println("Si quieres entrar a la  elección ventas presione 2:");
-        int n2 = entrada.nextInt();
+        String nombrefinal = " ";
+        int codigofinal = 0;
+        double preciofinal = 0;
 
-
-        switch (n2) {
-            case 1:
-                Main.opcionesprincipales(entrada);
-                break;
-            case 2:
-                Ventas(entrada);
-        }
-
-    }
-
-    public static void Ventas(Scanner entrada) {
         System.out.println("Has elegido la opcion  Ventas! ");
-        System.out.println("Dime la cantidad del producto que deseas añadir: ");
-        int cantidad = entrada.nextInt();
-        int[] vectorcodigo = new int[cantidad];
+        System.out.println(" Dime el nombre del producto ");
+        String product = entrada.next();
 
+        do {
+            for (int n = 0; n < mostrarcodigo.length; n++) {
+                if (mostrarnombre[n].equalsIgnoreCase(product)) {
 
-        for (int n = 0; n < cantidad; n++) {
-            System.out.println("Dime el producto numero: " + n );
-            int codigo = entrada.nextInt();
-            vectorcodigo[n] = codigo;
-            System.out.println("Si quieres volver al apartado principal presiona 1:");
-            System.out.println("Si quiere continuar con la elección ventas presione 2:");
-            int n2 = entrada.nextInt();
+                    nombrefinal += mostrarnombre[n];
+                    codigofinal += mostrarcodigo[n];
+                    preciofinal += mostrarprecio[n];
 
-
-            // switch (n2) {
-            //   case 1: Main.opcionesprincipales(entrada);
-            //     break;
-            //case 2:ventaprincipal(entrada);
-            //}
+                }
+            }
         }
+
+        while (product.equalsIgnoreCase("finalizado"));
+
+        System.out.println(nombrefinal);
+        System.out.println(codigofinal);
+        System.out.println(preciofinal);
     }
 }
 

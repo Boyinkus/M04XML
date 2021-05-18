@@ -40,9 +40,9 @@ public class Main {
             case 1:
                 opcion1stock(entrada);
                 break;
-            case 2:
-                ticket.ventaprincipal(entrada);
-                break;
+            //case 2:
+              //  Opcionesfinales(entrada);
+                //break;
             case 3:
                 break;
 
@@ -143,9 +143,37 @@ public class Main {
         int i = entrada.nextInt() ;
 
         switch (i) {
-            case 1: opcionesprincipales(entrada);
+            case 1: Opcionesfinales(entrada, mostrarnombre, mostrarcodigo, mostrarprecio);
             break;
         }
 
+    }
+
+    public static void Opcionesfinales (Scanner entrada, String [ ] mostrarnombre , int [ ] mostrarcodigo, double[ ] mostrarprecio) {
+        //Guardamos los vectores!
+        String [ ] nombre = mostrarnombre ;
+        int [ ] codigo = mostrarcodigo ;
+        double [ ] precio = mostrarprecio ;
+
+        System.out.println("Bienvenido al programa de Fidel Y Jordi ");
+        System.out.println("Eliges alguna de las opciones!");
+        System.out.println("Opcion 1: Stock");
+        System.out.println("Opcion 2: Vender");
+        System.out.println("Opcion 3: Salir");
+
+        System.out.println("Dime el numero!");
+        int v1 = entrada.nextInt();
+
+        switch (v1) {
+            case 1:
+                opcion1stock(entrada);
+                break;
+            case 2:
+                ticket.Ventas(entrada, nombre, codigo, precio);
+                break;
+            case 3:
+                break;
+
+        }
     }
 }
