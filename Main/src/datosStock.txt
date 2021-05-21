@@ -22,8 +22,10 @@ KongStrong 16 1,35
 1
 2
 4
-Redbull
-Fanta
-Pepsi
-RedBull
+CocaColaZero
+MonsterEnergyZeroUltra
+KongStrong
+KongStrong
+1
+1
 -1
