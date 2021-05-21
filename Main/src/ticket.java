@@ -14,6 +14,8 @@ public class ticket {
         int[] codigo = mostrarcodigo;
         double[] precio = mostrarprecio;
 
+        // Ya tenemos nuestra ""BBDD"" con el nombre, codigo, y precio.
+
         String nombrefinal = " ";
         int codigofinal = 0;
         double preciofinal = 0;
