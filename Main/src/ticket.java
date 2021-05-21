@@ -18,9 +18,6 @@ public class ticket {
 
         // Ya tenemos nuestra ""BBDD"" con el nombre, codigo, y precio.
 
-        String nombrefinal = "";
-        int codigofinal = 0;
-        double preciofinal = 0;
         int contador = 0;
 
         // En este apartado hemos inicializado funciones auxiliares para poder llevar a cabo las ventas.
@@ -45,23 +42,16 @@ public class ticket {
             for (int n = 0; n < mostrarcodigo.length; n++) {
                 if (mostrarnombre[n].equalsIgnoreCase(product)) {
 
-                    //nombrefinal += mostrarnombre[n];
                     nombreticket[contador - 1] += mostrarnombre[n];
 
-                    //codigofinal += mostrarcodigo[n];
                     codigoticket[contador - 1] += mostrarcodigo[n];
 
-                    //preciofinal += mostrarprecio[n];
                     precioticket[contador - 1] += mostrarprecio[n];
 
                 }
             }
         }
-        while (contador <= cantidad);
-
-        //System.out.println(nombrefinal);
-        //System.out.println(codigofinal);
-        //System.out.println(preciofinal);
+        while (contador < cantidad);
 
         System.out.println("Venta done! Presiona 1 para generara el ticket!");
         int v1 = entrada.nextInt();

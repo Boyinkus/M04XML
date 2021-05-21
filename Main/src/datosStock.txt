@@ -27,5 +27,4 @@ MonsterEnergyZeroUltra
 KongStrong
 KongStrong
 1
-1
 -1
