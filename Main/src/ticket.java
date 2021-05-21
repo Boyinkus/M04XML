@@ -21,6 +21,8 @@ public class ticket {
         double preciofinal = 0;
         int contador = 0;
 
+        // En este apartado hemos inicializado funciones auxiliares para poder llevar a cabo las ventas.
+
         System.out.println("Dime cuantos productos compraras");
         int cantidad = entrada.nextInt();
 
