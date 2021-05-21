@@ -9,7 +9,7 @@ Este Archivo contendrá el ticket
  */
 
 public class ticket {
-    public static void Ventas(Scanner entrada, String[] mostrarnombre, int[] mostrarcodigo, double[] mostrarprecio) {
+    public static void Ventas(String[] mostrarnombre, int[] mostrarcodigo, double[] mostrarprecio, Scanner entrada) {
         //Guardamos los vectores
 
         String[] nombre = mostrarnombre;
@@ -46,13 +46,13 @@ public class ticket {
                 if (mostrarnombre[n].equalsIgnoreCase(product)) {
 
                     //nombrefinal += mostrarnombre[n];
-                    nombreticket[contador-1] += mostrarnombre[n];
+                    nombreticket[contador - 1] += mostrarnombre[n];
 
                     //codigofinal += mostrarcodigo[n];
-                    codigoticket[contador-1] += mostrarcodigo[n];
+                    codigoticket[contador - 1] += mostrarcodigo[n];
 
                     //preciofinal += mostrarprecio[n];
-                    precioticket[contador-1] += mostrarprecio[n];
+                    precioticket[contador - 1] += mostrarprecio[n];
 
                 }
             }
@@ -68,31 +68,30 @@ public class ticket {
 
         switch (v1) {
             case 1:
-                mostrarticket(entrada, nombreticket, codigoticket, precioticket);
+                mostrarticket(nombreticket, codigoticket, precioticket, entrada);
         }
 
     }
 
-    public static void mostrarticket(Scanner entrada, String[] nombreticket, int[] codigoticket, double[] precioticket) {
+    public static void mostrarticket(String[] nombreticket, int[] codigoticket, double[] precioticket, Scanner entrada) {
 
-        String[] ticketnombre = nombreticket;
-        int[] ticketcodigo = codigoticket;
-        double[] ticketprecio = precioticket;
+        double preciototal = 0;
 
-        double preciototal = 0 ;
-
+        System.out.println("");
         System.out.println("********** GENERANDO TICKET **********");
+        System.out.println("");
 
-        for (int n = 0; n < ticketcodigo.length ; n++) {
+        for (int n = 0; n < codigoticket.length; n++) {
 
-            System.out.println("Nombre del producto " + (n+1) + ": " + (ticketnombre[n]));
+            System.out.println("Nombre del producto " + (n + 1) + ": " + (nombreticket[n]));
             System.out.println("Codigo del producto: " + codigoticket[n]);
             System.out.println("Precio del producto: " + precioticket[n] + "€");
-            preciototal += ticketprecio[n] ;
+            preciototal += precioticket[n];
             System.out.println(" ");
         }
 
         System.out.println("*******************************************");
+        System.out.println("");
         System.out.println("Precio total a pagar: " + preciototal + "€");
 
 

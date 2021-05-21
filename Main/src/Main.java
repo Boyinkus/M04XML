@@ -169,7 +169,7 @@ public class Main {
                 opcion1stock(entrada);
                 break;
             case 2:
-                ticket.Ventas(entrada, nombre, codigo, precio);
+                ticket.Ventas(nombre, codigo, precio, entrada);
                 break;
             case 3:
                 break;
