@@ -68,7 +68,7 @@ public class ticket {
         double preciototal = 0;
 
         System.out.println("");
-        System.out.println("********** GENERANDO TICKET **********");
+        System.out.println("*********** GENERANDO TICKET ***********");
         System.out.println("");
 
         for (int n = 0; n < codigoticket.length; n++) {

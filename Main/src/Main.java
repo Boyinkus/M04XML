@@ -156,7 +156,7 @@ public class Main {
         double [ ] precio = mostrarprecio ;
 
         System.out.println("Bienvenido al programa de Fidel Y Jordi ");
-        System.out.println("Eliges alguna de las opciones!");
+        System.out.println("Eliges alguna de las opciones!!");
         System.out.println("Opcion 1: Stock");
         System.out.println("Opcion 2: Vender");
         System.out.println("Opcion 3: Salir");

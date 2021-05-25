@@ -14,7 +14,7 @@ RedBull 9 1,60
 RedBullZero 10 1,50
 RedbullCoco 11 1,60
 CocaColaZero 12 1,40
-CocaColaZeroZero 13 1,45
+CocaColaZeroZero 13 1,50
 PespsiMax 14 1,30
 FantaLimon 15 1,50
 KongStrong 16 1,35
